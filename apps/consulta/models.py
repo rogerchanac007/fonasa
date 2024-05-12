@@ -18,4 +18,4 @@ class Consulta(models.Model):
     especialista = models.ForeignKey(Especialista, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.id
+        return str(self.id)

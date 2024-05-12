@@ -8,9 +8,11 @@ class Paciente(models.Model):
     domicilio = models.CharField(max_length=35)
     peso = models.IntegerField(null=True)
     estatura = models.IntegerField(null=True)
-    fumador = models.BooleanField(null=True)
+    fumador = models.BooleanField(null=True, default=False)
+    años_fumando = models.IntegerField(null=True)
+    dieta = models.BooleanField(null=True, default=False)
     fecha_alta = models.DateTimeField(auto_now = True)
 
 
     def __str__(self):
-        return self.nombre
+        return self.nombres
