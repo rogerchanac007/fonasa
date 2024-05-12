@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'apps.seccion',
     'apps.consulta',
     'apps.especialista',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
